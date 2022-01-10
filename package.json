@@ -1,0 +1,20 @@
+{
+  "name": "refactor",
+  "version": "1.0.0",
+  "description": "refactoring form",
+  "main": "index.js",
+  "repository": "git@github.com:lahgomes/refactor_form-login-and-signup.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.47.0"
+  }
+}
