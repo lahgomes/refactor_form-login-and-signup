@@ -2,3 +2,122 @@
 @import './variables';
 @import './mixins';
 @import './functions';
+
+.d-none {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: px-to-rem(20);
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    padding: px-to-rem(20);
+  }
+}
+
+.tab {
+  display: flex;
+
+  @media (min-width: $md) {
+    flex-direction: column;
+  }
+
+  &__btn {
+    background-color: $white;
+    border: 2px solid $orange;
+    color: $orange;
+    cursor: pointer;
+    font-size: px-to-rem(18);
+    font-weight: 500;
+    padding: px-to-rem(20);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    width: 100%;
+
+    @media (max-width: $md) {
+      border-bottom: transparent;
+    }
+
+    @media (min-width: $md) {
+      border-right: transparent;
+    }
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &.active {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
+
+.form {
+  border: 4px solid $orange;
+  padding: px-to-rem(20);
+
+  @media (min-width: $xs) {
+    min-width: px-to-rem(500);
+  }
+
+  &__title {
+    color: $orange;
+    font-size: px-to-rem(25);
+    font-weight: 500;
+    margin-bottom: px-to-rem(10);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: solid 2px $orange;
+    margin: px-to-rem(8) 0;
+    outline: none;
+    padding: px-to-rem(6) px-to-rem(12);
+    transition: background-color 0.3s ease;
+    width: 100%;
+
+    &:focus {
+      background-color: $orange-rgba;
+    }
+
+    &::placeholder {
+      color: $orange;
+      font-family: $primary-font;
+    }
+
+    &.textarea {
+      border: solid px-to-rem(2) $orange;
+      margin: px-to-rem(10) 0;
+      outline: none;
+      padding: px-to-rem(6) px-to-rem(12);
+      resize: none;
+    }
+  }
+
+  &__btn {
+    background-color: $orange;
+    border-radius: px-to-rem(5);
+    border: px-to-rem(2) solid #fff;
+    box-shadow: 0 0 0px px-to-rem(4) #e67817;
+    color: $white;
+    cursor: pointer;
+    font-family: $primary-font;
+    font-size: px-to-rem(15);
+    margin-top: px-to-rem(30);
+    padding: px-to-rem(10) px-to-rem(20);
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}

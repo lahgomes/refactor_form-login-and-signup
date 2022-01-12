@@ -12,6 +12,55 @@
 </head>
 
 <body>
+  <main class="container">
+    <section class="tab">
+      <div class="tab__signup">
+        <button class="tab__btn active">Sign Up</button>
+      </div>
+      <div class="tab__login">
+        <button class="tab__btn">Login</button>
+      </div>
+    </section>
+    <section class="form">
+      <form class="form__signup">
+        <h1 class="form__title">Sign Up</h1>
+        <div class="form__group">
+          <input arial-label="Name" class="form__input" type="text" placeholder="Name">
+        </div>
+        <div class="form__group">
+          <input arial-label="Company Name" class="form__input" type="text" placeholder="Company Name">
+        </div>
+        <div class="form__group">
+          <input arial-label="E-mail" class="form__input" type="text" placeholder="Email">
+        </div>
+        <div class="form__group">
+          <input arial-label="Telefone" class="form__input" type="text" placeholder="Phone number">
+        </div>
+        <div class="form__group">
+          <textarea aria-label="message" id="message" cols="30" rows="10" placeholder="Message"
+            class="form__input textarea"></textarea>
+        </div>
+        <div class="form__group">
+          <button type="submit" class="form__btn">Sign Up</button>
+        </div>
+      </form>
+
+      <form class="form__login d-none ">
+        <h1 class="form__title">Login</h1>
+        <div class="form__group">
+          <input arial-label="Email" class="form__input" type="text" placeholder="Email">
+        </div>
+        <div class="form__group">
+          <input arial-label="Password" class="form__input" type="text" placeholder="Password">
+        </div>
+        <div class="form__group">
+          <button type="submit" class="form__btn">Log in</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
 
 
 </body>
