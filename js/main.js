@@ -1,6 +1,5 @@
 const tabButtons = document.querySelectorAll('[data-button]');
 const forms = document.querySelectorAll('[data-form]');
-
 const toggleForm = (data) => {
   const formTarget = document.querySelector(`[data-form='${data}']`);
 
