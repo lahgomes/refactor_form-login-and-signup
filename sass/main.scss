@@ -22,7 +22,10 @@
   display: flex;
 
   @media (min-width: $md) {
+    align-items: flex-end;
     flex-direction: column;
+    min-width: 170px;
+    gap: 0.5px;
   }
 
   &__btn {
@@ -35,7 +38,8 @@
     padding: px-to-rem(20);
     text-transform: uppercase;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 120px;
+    //width: 100%;
 
     @media (max-width: $md) {
       border-bottom: transparent;
@@ -53,7 +57,10 @@
     &.active {
       background-color: $orange;
       color: $white;
-      pointer-events: none;
+      width: 170px;
+      //margin-left: px-to-rem(5);
+      //transform: scale(1, 1);
+      //transform-origin: right;
     }
   }
 }
