@@ -3,7 +3,7 @@
 @import './mixins';
 @import './functions';
 
-.d-none {
+.form--desable {
   display: none;
 }
 
@@ -24,22 +24,20 @@
   @media (min-width: $md) {
     align-items: flex-end;
     flex-direction: column;
-    min-width: 170px;
-    gap: 0.5px;
+    gap: px-to-rem(0.5);
   }
 
   &__btn {
     background-color: $white;
-    border: 2px solid $orange;
+    border: px-to-rem(2) solid $orange;
     color: $orange;
     cursor: pointer;
     font-size: px-to-rem(18);
     font-weight: 500;
     padding: px-to-rem(20);
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    width: 120px;
-    //width: 100%;
+    transition: background-color 0.4s ease, width 0.4s ease;
+    width: px-to-rem(120);
 
     @media (max-width: $md) {
       border-bottom: transparent;
@@ -57,16 +55,13 @@
     &.active {
       background-color: $orange;
       color: $white;
-      width: 170px;
-      //margin-left: px-to-rem(5);
-      //transform: scale(1, 1);
-      //transform-origin: right;
+      width: px-to-rem(170);
     }
   }
 }
 
 .form {
-  border: 4px solid $orange;
+  border: px-to-rem(4) solid $orange;
   padding: px-to-rem(20);
 
   @media (min-width: $xs) {
@@ -84,7 +79,7 @@
 
   &__input {
     border: none;
-    border-bottom: solid 2px $orange;
+    border-bottom: solid px-to-rem(2) $orange;
     color: $orange;
     margin: px-to-rem(8) 0;
     outline: none;
